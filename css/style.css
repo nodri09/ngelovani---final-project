@@ -1,0 +1,151 @@
+/* color pallete # 
+#d00000, #ffba08, #3f88c5, #032b43, #136f63
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Education Rectangle */
+.education_rec {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 30%;
+    background-color: #D00000;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid none solid solid;
+}
+
+/* Empty rectangle between "Education" and "About me" */
+.emptyRecRightEdu {
+    position: fixed;
+    top: 0;
+    left: 60%;
+    width: 5%;
+    height: 30%;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid none solid solid;
+}
+
+.aboutMe_rec {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 45%;
+    background-color: #FFBA08;
+    border: 5px solid black;
+}
+
+.emptyRecUnderAbout_1 {
+    position: fixed;
+    top: 45%;
+    right: 0;
+    width: 16%;
+    height: 45%;
+    border-width: 5px;
+    border-color: black;
+    border-style: none solid solid solid;
+}
+
+.emptyRecUnderAbout_2 {
+    position: fixed;
+    top: 45%;
+    right: 16%;
+    width: 16%;
+    height: 45%;
+    border-width: 5px;
+    border-color: black;
+    border-style: none none solid solid;
+}
+
+.yellowHrzntlRec {
+    position: fixed;
+    top: 90%;
+    right: 0;
+    width: 32%;
+    height: 10%;
+    background-color: #FFBA08;
+    border-width: 5px;
+    border-color: black;
+    border-style: none solid solid solid;
+}
+
+.contact_rec {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    width: 35%;
+    height: 58%;
+    background-color: #3F88C5;
+    border-width: 5px;
+    border-style: none solid;
+    border-color: black;
+}
+
+/* effects for contact form goes here */
+/* TO DO... */
+.contact_rec form {
+    display: none;
+}
+
+.emptyRecUnderCont {
+    position: fixed;
+    top: 88%;
+    left: 0;
+    width: 35%;
+    height: 12%;
+    border: 5px solid black;
+}
+
+.portfolio_rec {
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    width: 30%;
+    height: 30%;
+    border-bottom: 5px solid black;
+}
+
+.emptyRecRightToPortf {
+    position: fixed;
+    width: 3%;
+    height: 15%;
+    top: 45%;
+    right: 32%;
+    border-width: 5px;
+    border-color: black;
+    border-style: none none solid solid;
+    background-color: #3F88C5;
+}
+
+.work_proj_rec {
+    position: fixed;
+    bottom: 0%;
+    left: 35%;
+    width: 33%;
+    height: 40%;
+    background-color: #d00000;
+    border-width: 5px;
+    border-style: none none solid none;
+    border-color: black;
+}
+
+
+
+@media screen and (max-width: 769px) {
+    * {
+        position: relative;
+    }
+
+    .emptyRecRightEdu, .emptyRecUnderAbout_1, .emptyRecUnderAbout_2, .yellowHrzntlRec, .emptyRecUnderCont, .emptyRecRightToPortf, .lg-screens {
+        display: none;
+    }
