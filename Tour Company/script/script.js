@@ -1,5 +1,12 @@
-const tourStartDate = document.getElementById('#tourStartDate');
-const tourEndDate = document.getElementById('#tourEndDate');
+const topBar = document.getElementsByClassName('top-menu');
+
+topBar.addEventListener('scroll', (event) => {
+    
+})
+
+/* Tour booking form validator */ 
+const tourStartDate = document.getElementById('tourStartDate');
+const tourEndDate = document.getElementById('tourEndDate');
 const dateError = document.querySelector('span.error');
 
 tourStartDate.addEventListener('input', event => {

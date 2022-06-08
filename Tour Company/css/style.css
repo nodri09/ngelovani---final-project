@@ -7,6 +7,7 @@
     list-style: none;
 }
 
+/* Carousel of the index page */
 .top-carousel img {
     object-fit: cover;
     filter: opacity(90%) blur(2px);
@@ -15,8 +16,10 @@
     height: 90vh;
 }
 
+/* Top bar */
 .top-menu {
     background-color: white;
+    border-bottom: 1px solid black;
 }
 
 .booking-form {
@@ -47,9 +50,26 @@ form label {
   }
 
 .tour-detail-page {
-    background: url('images/carousel-2.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+    width: 100%;
+    height: 100%;
+    background: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size:cover;
+    -o-background-size: cover;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 100%;
+    height: auto;
+    background: #007bff;
+    background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+
+.bg-image {
+    background-image: url('https://source.unsplash.com/kKvQJ6rK6S4/660x1000');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
