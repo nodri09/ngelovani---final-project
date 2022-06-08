@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Pre-load all the styles and scripts -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="script/instantpage.js" as="script">
+    <link rel="preload" href="script/script.js" as="script" />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- Jquery CSS -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Title of the web-page -->
+    <title>Tour Copmany</title>
+</head>
+<body>
+    <header>
+
+        <nav class="offcanvas offcanvas-start" id="side-menu">
+            <div class="offcanvas-header">
+              <h1 class="offcanvas-title">Heading</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <a href="index.html" class="active"><p>Home</p></a>
+                <a href="tours.html" >Tours</a>
+                <p>Some text lorem ipsum.</p>
+                <p>Some text lorem ipsum.</p>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Top Bar -->
+        <div class="row sticky-top top-menu">
+            <ul class="list-inline">
+                <li class="list-inline-item col-1">
+                    <button class="btn btn-default menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#side-menu">
+                        <i class="bi bi-list h1"></i>
+                    </button>
+                </li>
+                <li class="list-inline-item col-10 ">
+                    <h2 class="text-center mt-3">Tour Company Name</h2>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Carousel and Tour Booking Form -->
+        <section>
+            <div class="container-fluid"> 
+
+                <div class="row top-carousel">
+                    <div class="carousel slide">
+
+                        <div id="top-carousel" class="carousel-inner" data-bs-ride="carousel"> 
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <img src="images/carousel-1.jpg" alt="Top Carousel Travel Map" class="d-block ">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="images/carousel-2.jpg" alt="Top Carousel Airplain" class="d-block">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="images/carousel-3.jpg" alt="Top Carousel Friends" class="d-block">
+                            </div>
+                        </div>
+
+                        <!-- Tour Booking Form -->
+                        <div class="container booking-form">
+
+                            <form class="form-inline carousel-caption" action="" onsubmit="return validateForm()" method="post">
+                                <div class="form-row">
+                                    
+                                    <!-- tour destination input -->
+                                    <label class="sr-only" for="destinationInput">Destination</label>
+                                    <input type="text" class="form-control mb-2 mr-sm-2" id="tripDestinationInput" placeholder="Tbilisi" name="tripDestinationInput">
+        
+                                   <!-- tour start date input -->
+                                    <label for="tourStartDate" class="sr-only">Tour Start Date</label>
+                                    <input type="date" class="form-control mb-2 mr-sm-2" id="tourStartDate" placeholder="Travel Dates" name="tourStartDate">
+                                    
+                                    <!-- tour end date input -->
+                                    <label for="tourEndDate" class="sr-only">Tour End Date</label>
+                                    <input type="date" class="form-control mb-2 mr-sm-2" id="tourEndDate" placeholder="Travel Dates" name="tourEndDate">
+                                    <span class="error" aria-live="polite"></span>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                            </form>
+
+                        </div>
+                        
+
+                    </div>
+                    
+                </div> 
+
+            </div>
+            
+        </section>
+
+        <section class="mt-5">
+            <div class="bg-primary text-center py-5 mb-4 container">
+                <h1 class="fw-light text-white">Meet our Guides and Drivers</h1>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                  <!-- Team Member 1 -->
+                  <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                      <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
+                      <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Guide</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Team Member 2 -->
+                  <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                      <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">
+                      <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Driver</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Team Member 3 -->
+                  <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                      <img src="https://source.unsplash.com/sNut2MqSmds/500x350" class="card-img-top" alt="...">
+                      <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Guide</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Team Member 4 -->
+                  <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                      <img src="https://source.unsplash.com/7u5mwbu7qLg/500x350" class="card-img-top" alt="...">
+                      <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Driver</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.row -->
+              
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="script/script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Google JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Google Jquery Mobile CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Instant Page -->
+    <script src="script/instantpage.js" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+</body>
+</html>
