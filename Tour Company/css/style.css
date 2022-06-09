@@ -1,37 +1,107 @@
-/* nav #navbarNav {
-    margin-left: 5em;
-} */
-
+/* Global Styles */
 *, a {
     text-decoration: none;
     list-style: none;
+
+    --sideBar-a-fontSize: 26px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+/* Side bar */
+.side-menu-item {
+    width: calc(var(--sideBar-a-fontSize) * 4);
+    height: 2em;
+
+    color: gray;
+    font-size:var(--sideBar-a-fontSize);
+
+}
+
+.side-menu-item a {
+    color: gray;
+}
+
+.side-menu-item:hover, .side-menu-item:hover a {
+    color: rgb(146, 152, 207);
+
+    border-bottom: 4px solid rgb(146, 152, 207);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 50%;
+
+    animation: fade-in;
+    animation-duration: .5s;
+}
+
+.side-menu-item:focus {
+    color: darkgray;
+}
+
+.active-link {
+    color: darkgray;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+}
+
+.btn-google {
+color: white !important;
+background-color: #ea4335;
+}
+
+.btn-facebook {
+color: white !important;
+background-color: #3b5998;
 }
 
 /* Carousel of the index page */
 .top-carousel img {
     object-fit: cover;
-    filter: opacity(90%) blur(2px);
+    filter: opacity(80%) blur(5px) grayscale(80%);
 
     width: 100%;
     height: 90vh;
 }
 
-/* Top bar */
-.top-menu {
-    background-color: white;
-    border-bottom: 1px solid black;
+/* Booking form styles */
+.form-heading {
+    -webkit-text-stroke: 1px #F8F8F8;
+	text-shadow: 0px 1px 4px #23430C;
 }
 
-.booking-form {
-    background-color: #FB5012;
+.form-row {
+    background-color: #357DED;
+    box-shadow: 0px 0px 5px black;
+
+    padding: 1%;
+
+    border-radius: 20% 5px;
 }
 
-form label {
+form .booking-form-label {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     font-weight: bold;
-    color: darkgoldenrod;
+    color: white;
 }
+
 
 .error {
     width  : 100%;
@@ -49,9 +119,22 @@ form label {
     padding: 0.3em;
   }
 
+/* Top bar */
+.top-menu {
+    background-color: white;
+
+    transition: all 0.15s linear; 
+}
+
+#top-menu.active {
+    box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+}
+
+/* Tour's detail page styles */
 .tour-detail-page {
     width: 100%;
     height: 100%;
+
     background: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -63,6 +146,7 @@ form label {
 .contact-form {
     width: 100%;
     height: auto;
+
     background: #007bff;
     background: linear-gradient(to right, #0062E6, #33AEFF);
 }
@@ -73,3 +157,15 @@ form label {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/* Features Section Styles */
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 3rem;
+    width: 3rem;
+
+    font-size: 1.5rem;
+  }

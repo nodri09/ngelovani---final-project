@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Pre-load all the styles and scripts -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="script/instantpage.js" as="script">
+    <link rel="preload" href="script/script.js" as="script" />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- Jquery CSS -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Title of the web-page -->
+    <title>Tour Copmany</title>
+</head>
+<body>
+    <header>
+
+        <nav class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="side-menu">
+            <div class="offcanvas-header">
+              <h1 class="offcanvas-title">Heading</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="side-menu-item"><a href="index.html"><p>Home</p></a></div>
+                <div class="side-menu-item"><a href="tours.html"><p>Tours</p></a></div>
+                <div class="side-menu-item"><a href="blog.html" class="active-link"><p>Blog</p></a></div>
+                
+                <!-- Log in -->
+                <div class="row">
+                    <div class="mx-auto">
+                      <div class="card border-0 shadow rounded-3 my-5">
+                        <div class="card-body p-4 p-sm-5">
+                          <h5 class="card-title text-center mb-5 fw-light fs-5">Sign In</h5>
+                          <form>
+                            <div class="form-floating mb-2">
+                              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                              <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                              <label for="floatingPassword">Password</label>
+                            </div>
+              
+                            <div class="form-check mb-2">
+                              <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
+                              <label class="form-check-label" for="rememberPasswordCheck">
+                                Remember password
+                              </label>
+                            </div>
+                            <div class="d-grid">
+                              <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign
+                                in</button>
+                            </div>
+                            <hr class="my-3">
+                            <div class="d-grid mb-2">
+                              <button class="btn btn-google btn-login text-uppercase fw-bold" type="submit">
+                                <i class="bi bi-google"></i> Sign in with Google
+                              </button>
+                            </div>
+                            <div class="d-grid">
+                              <button class="btn btn-facebook btn-login text-uppercase fw-bold" type="submit">
+                                <i class="bi bi-facebook me-2"></i> Sign in with Facebook
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- Top Bar -->
+        <div class="row sticky-top top-menu" id="top-menu">
+            <ul class="list-inline">
+                <li class="list-inline-item col-1">
+                    <button class="btn btn-default menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#side-menu">
+                        <i class="bi bi-list h1"></i>
+                    </button>
+                </li>
+                <li class="list-inline-item col-9 ">
+                    <h2 class="text-center mt-3">Tour Company Name</h2>
+                </li>
+                <li class="list-inline-item col-1 ">
+                    <a href="contact.html" class="d-flex justify-content-end">Contact us</a>
+                </li>
+            </ul>
+        </div>
+
+        <section class="py-5">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 card shadow my-5">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-10 card-body">
+
+                        <!-- Breadcrumbs -->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                              <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Blog Post Title</li>
+                            </ol>
+                          </nav>
+                        <!-- Post content-->
+                        <article>
+                            <!-- Post header-->
+                            <div class="mb-4">
+                                <!-- Post title-->
+                                <h1 class="fw-bolder mb-1">Welcome to Blog Post!</h1>
+                                <!-- Post meta content-->
+                                <div class="text-muted fst-italic mb-2">January 1, 2022</div>
+                                <!-- Post categories-->
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">Tbilisi</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">City-tour</a>
+                            </div>
+                            <!-- Preview image figure-->
+                            <figure class="mb-4"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>
+                            <!-- Post content-->
+                            <section class="mb-5">
+                                <p class="fs-5 mb-4">Lorem ipsum dolor sit amet, laudem quodsi sea in, essent corpora commune has in. In his idque virtute imperdiet, tation interesset has ut. Decore homero atomorum cum ne. Mei an aeterno aliquip.</p>
+                                <p class="fs-5 mb-4">Mei ei partiendo principes, quo modo viderer antiopam et. Duo ullum fabulas contentiones eu. Nibh viris te usu. Cu elit ipsum has, malorum labores nec ad. An eum integre posidonium, an partem admodum nec, ex sea cibo splendide percipitur.
+                                </p>
+                                <p class="fs-5 mb-4">Qui no nobis semper accusata. Ad vim ludus utamur erroribus. Ad pri mutat dolorum laoreet. Zril legimus blandit ex vix. Ad offendit periculis vix. Inimicus pericula theophrastus has ad. Vel mundi laoreet iudicabit ad. Te vim quidam quodsi alterum, purto doming interesset ad duo, no eos iusto ignota platonem. Eos graecis urbanitas et, alia nobis has id.
+                                </p>
+                                <h2 class="fw-bolder mb-4 mt-5">Ei integre abhorreant eum.</h2>
+                                <p class="fs-5 mb-4">Ei integre abhorreant eum. Meliore qualisque quo ad. Duo ne quot legere, accumsan invenire persecuti at sed. Dolores tacimates euripidis eos cu, vix odio invidunt evertitur ea, eos tale delenit periculis et.</p>
+                                <p class="fs-5 mb-4">Ut mea consetetur contentiones, iusto populo corpora mel et, vis possim dignissim id. Ipsum nulla referrentur id mea. Ex diam sint nulla pro. Est at aliquam recusabo, harum verterem consequuntur et pro, cum ei eros nominavi electram. Ea sit altera ancillae, ei duo libris fastidii ullamcorper. Vis regione tritani ut, ea maluisset sadipscing usu.</p>
+                            </section>
+                        </article>
+                        <!-- Comments section-->
+                        <section>
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <!-- Comment form-->
+                                    <form class="mb-4"><textarea class="form-control" rows="3" placeholder="Join the discussion and leave a comment!"></textarea></form>
+                                    <!-- Comment with nested comments-->
+                                    <div class="d-flex mb-4">
+                                        <!-- Parent comment-->
+                                        <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                        <div class="ms-3">
+                                            <div class="fw-bold">Commenter Name</div>
+                                            Lorem ipsum dolor sit amet, laudem quodsi sea in, essent corpora commune has in. In his idque virtute imperdiet.
+                                            <!-- Child comment 1-->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">Commenter Name</div>
+                                                    Qui no nobis semper accusata. Ad vim ludus utamur erroribus. Ad pri mutat dolorum laoreet. Zril legimus blandit ex vix. Ad offendit periculis vix. Inimicus pericula theophrastus has ad. Vel mundi laoreet iudicabit ad.
+                                                </div>
+                                            </div>
+                                            <!-- Child comment 2-->
+                                            <div class="d-flex mt-4">
+                                                <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                                <div class="ms-3">
+                                                    <div class="fw-bold">Commenter Name</div>
+                                                    Ut mea consetetur contentiones, iusto populo corpora mel et.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Single comment-->
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
+                                        <div class="ms-3">
+                                            <div class="fw-bold">Commenter Name</div>
+                                            Est at aliquam recusabo, harum verterem consequuntur et pro, cum ei eros nominavi electram. Ea sit altera ancillae, ei duo libris fastidii ullamcorper. Vis regione tritani ut, ea maluisset sadipscing usu.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2022</div></div>
+                <div class="col-auto">
+                    <a class="link-light small" href="#!">Privacy</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Google JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Google Jquery Mobile CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Custom Javascript -->
+    <script src="script/script.js"></script>
+    <!-- Instant Page -->
+    <script src="script/instantpage.js" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+</body>
+</html>

@@ -17,169 +17,230 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+
     <!-- Title of the web-page -->
     <title>Tour Copmany</title>
 </head>
 <body class="tour-detail-page">
     <header>
 
-        <nav class="offcanvas offcanvas-start" id="side-menu">
-            <div class="offcanvas-header">
-              <h1 class="offcanvas-title">Heading</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      <nav class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="side-menu">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Heading</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="side-menu-item"><a href="index.html"><p>Home</p></a></div>
+            <div class="side-menu-item"><a href="tours.html" class="active-link"><p>Tours</p></a></div>
+            <div class="side-menu-item"><a href="blog.html"><p>Blog</p></a></div>
+              
+            <!-- Log in -->
+            <div class="row">
+              <div class="mx-auto">
+                <div class="card border-0 shadow rounded-3 my-5">
+                  <div class="card-body p-4 p-sm-5">
+                    <h5 class="card-title text-center mb-5 fw-light fs-5">Sign In</h5>
+                    <form>
+                      <div class="form-floating mb-2">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                      </div>
+        
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
+                        <label class="form-check-label" for="rememberPasswordCheck">
+                          Remember password
+                        </label>
+                      </div>
+                      <div class="d-grid">
+                        <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign
+                          in</button>
+                      </div>
+                      <hr class="my-3">
+                      <div class="d-grid mb-2">
+                        <button class="btn btn-google btn-login text-uppercase fw-bold" type="submit">
+                          <i class="bi bi-google"></i> Sign in with Google
+                        </button>
+                      </div>
+                      <div class="d-grid">
+                        <button class="btn btn-facebook btn-login text-uppercase fw-bold" type="submit">
+                          <i class="bi bi-facebook me-2"></i> Sign in with Facebook
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="offcanvas-body">
-                <a href="index.html" class="active"><p>Home</p></a>
-                <a href="tours.html" >Tours</a>
-                <p>Some text lorem ipsum.</p>
-                <p>Some text lorem ipsum.</p>
-            </div>
-        </nav>
+          </div>
+      </nav>
     </header>
 
     <main>
         <!-- Top Bar -->
-        <div class="row sticky-top top-menu">
+        <div class="row sticky-top top-menu" id="top-menu">
             <ul class="list-inline">
                 <li class="list-inline-item col-1">
                     <button class="btn btn-default menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#side-menu">
                         <i class="bi bi-list h1"></i>
                     </button>
                 </li>
-                <li class="list-inline-item col-10 ">
+                <li class="list-inline-item col-9">
                     <h2 class="text-center mt-3">Tour Company Name</h2>
+                </li>
+                <li class="list-inline-item col-1">
+                  <a href="contact.html" class="d-flex justify-content-end">Contact us</a>
                 </li>
             </ul>
         </div>
   
         <!-- Tour Content -->
-        <div class="">
-            <div class="container">
-                <div class="card border-0 shadow my-5">
-                    <div class="card-body p-5">
-                        <h1 class="fw-light">Fixed Full Page Background Image</h1>
-                        <p class="lead">
-                            Lorem ipsum dolor sit amet, error partem possim sit cu, per no reque fugit sententiae, tation detraxit suavitate vim no. Ei vidisse omittam repudiandae vel. Eos et magna vivendo apeirian, harum accusam in qui, nec causae reprehendunt te. Odio eruditi consequat mea eu, vim at altera ancillae. Ea esse melius percipit his.
-                        </p class="lead">
+        <div class="container">
+            <div class="card border-0 shadow my-5">
+                <div class="card-body p-5">
 
-                        <p class="lead">
-                            Menandri adversarium te est, vix dolorum utroque ponderum cu, sed eirmod persius referrentur ut. Decore cetero per an, at suas intellegam sed. Id iudico facete mandamus mea, in cibo tempor sea, ea vim tritani voluptatum. No animal alterum salutatus est, an vim postea nonumes. At vis soluta graece repudiare, id utroque eleifend urbanitas sed. Magna viderer vel ea, vim ad harum invidunt inimicus.
-                        </p>
-                            
-                        <p class="lead">
-                            Nam utamur sanctus persecuti an, quo ea virtute partiendo. Est et eligendi accommodare. Ad ius propriae noluisse, nobis nostro pri te. Has at iusto perfecto eleifend, qui ut porro atqui affert. Id stet minimum vis. Ex possim meliore postulant sed, no eum etiam nostro.
-                        </p>
-                            
-                        <p class="lead">
-                            Te delenit feugait conclusionemque pri, te aperiam singulis intellegam ius. Ne duo noster labitur. Aliquam delenit theophrastus id sit, per tota autem soluta ei, sonet epicurei cotidieque pro at. Ei pro vitae vocent. Oblique mandamus no mea.
-                        </p>
-                            
-                        <p class="lead">
-                            Quo minim pertinax ne, inimicus hendrerit comprehensam ne eum. Accusata iracundia per eu, aliquip sadipscing in qui, semper maluisset consetetur ei has. An sit erat prompta, elit corrumpit honestatis ei sed, ut ius dicant vituperatoribus. Quod invenire an his, ne has essent eirmod recteque. Convenire assueverit scribentur vim et.
-                        </p>  
-                            
-                        <p class="lead">
-                            Eu nam vivendo repudiandae, eu quod tale paulo eam. Eam id omnium appetere perfecto, alii dolorem conceptam ea quo, velit deserunt adversarium an sea. Per in soleat interesset, sit ad amet deleniti, at laudem platonem sit. At graeci appellantur sed, ne quem quando mel. Sed cu velit causae perpetua, error voluptaria per ad. Ferri veniam vivendo no per.
-                        </p>
-                            
-                        <p class="lead">
-                            Erat veniam suavitate sea id, autem recteque vis ei. Ex lorem dicunt virtute sed. Ei inani option corpora nec, cu nam alia probatus, ei nec adhuc aperiri similique. Has no debitis iracundia philosophia, eu ius enim detracto democritum, eam ne blandit tacimates disputationi. Per probo saperet suavitate te.
-                        </p>
-                            
-                        <p class="lead">
-                            Mea ad tantas fabulas expetendis, at vel molestiae rationibus consequuntur, eu suas adhuc consulatu eos. Est decore labore assueverit te. Nisl velit at vis, modus mentitum et mel, inani laoreet imperdiet vel ne. Qui equidem suavitate ei, delectus lucilius ea usu. Eu sumo luptatum pro, has no alii oblique. Virtute mandamus intellegam his in, vero idque facilisi mei ei.
-                        </p>
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                      <li class="breadcrumb-item"><a href="tours.html">Tours</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Tour #</li>
+                    </ol>
+                  </nav>
 
-                        <h1 class="fw-light text-center text-lg-start mt-4 mb-0">Tour Gallery</h1>
-                  
-                    <hr class="mt-2 mb-5">
-                  
-                    <div class="row text-center text-lg-start">
-                  
-                      <div class="col-lg-3 col-md-4 col-6">
-                        <a href="#" class="d-block mb-4 h-100">
-                          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
-                        </a>
-                      </div>
-                      <div class="col-lg-3 col-md-4 col-6">
-                        <a href="#" class="d-block mb-4 h-100">
-                          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="">
-                        </a>
-                      </div>
-                      <div class="col-lg-3 col-md-4 col-6">
-                        <a href="#" class="d-block mb-4 h-100">
-                          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt="">
-                        </a>
-                      </div>
-                      <div class="col-lg-3 col-md-4 col-6">
-                        <a href="#" class="d-block mb-4 h-100">
-                          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
-                        </a>
-                      </div>
-                      <div class="col-lg-3 col-md-4 col-6">
-                        <a href="#" class="d-block mb-4 h-100">
-                          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
-                        </a>
-                      </div>
-                      <div class="col-lg-3 col-md-4 col-6">
-                        <a href="#" class="d-block mb-4 h-100">
-                          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/AvhMzHwiE_0/400x300" alt="">
-                        </a>
-                      </div>
-                      <div class="col-lg-3 col-md-4 col-6">
-                        <a href="#" class="d-block mb-4 h-100">
-                          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/2gYsZUmockw/400x300" alt="">
-                        </a>
-                      </div>
-                      <div class="col-lg-3 col-md-4 col-6">
-                        <a href="#" class="d-block mb-4 h-100">
-                          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EMSDtjVHdQ8/400x300" alt="">
-                        </a>
-                      </div>
-                      <div class="col-lg-3 col-md-4 col-6">
-                        <a href="#" class="d-block mb-4 h-100">
-                          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/8mUEy0ABdNE/400x300" alt="">
-                        </a>
-                      </div>
-                      <div class="col-lg-3 col-md-4 col-6">
-                        <a href="#" class="d-block mb-4 h-100">
-                          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/G9Rfc1qccH4/400x300" alt="">
-                        </a>
-                      </div>
-                      <div class="col-lg-3 col-md-4 col-6">
-                        <a href="#" class="d-block mb-4 h-100">
-                          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aJeH0KcFkuc/400x300" alt="">
-                        </a>
-                      </div>
-                      <div class="col-lg-3 col-md-4 col-6">
-                        <a href="#" class="d-block mb-4 h-100">
-                          <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/p2TQ-3Bh3Oo/400x300" alt="">
-                        </a>
+                  <h1 class="fw-light">Fixed Full Page Background Image</h1>
+                  <p class="lead">
+                      Lorem ipsum dolor sit amet, error partem possim sit cu, per no reque fugit sententiae, tation detraxit suavitate vim no. Ei vidisse omittam repudiandae vel. Eos et magna vivendo apeirian, harum accusam in qui, nec causae reprehendunt te. Odio eruditi consequat mea eu, vim at altera ancillae. Ea esse melius percipit his.
+                  </p class="lead">
 
+                  <p class="lead">
+                      Menandri adversarium te est, vix dolorum utroque ponderum cu, sed eirmod persius referrentur ut. Decore cetero per an, at suas intellegam sed. Id iudico facete mandamus mea, in cibo tempor sea, ea vim tritani voluptatum. No animal alterum salutatus est, an vim postea nonumes. At vis soluta graece repudiare, id utroque eleifend urbanitas sed. Magna viderer vel ea, vim ad harum invidunt inimicus.
+                  </p>
+                      
+                  <p class="lead">
+                      Nam utamur sanctus persecuti an, quo ea virtute partiendo. Est et eligendi accommodare. Ad ius propriae noluisse, nobis nostro pri te. Has at iusto perfecto eleifend, qui ut porro atqui affert. Id stet minimum vis. Ex possim meliore postulant sed, no eum etiam nostro.
+                  </p>
+                      
+                  <p class="lead">
+                      Te delenit feugait conclusionemque pri, te aperiam singulis intellegam ius. Ne duo noster labitur. Aliquam delenit theophrastus id sit, per tota autem soluta ei, sonet epicurei cotidieque pro at. Ei pro vitae vocent. Oblique mandamus no mea.
+                  </p>
+                      
+                  <p class="lead">
+                      Quo minim pertinax ne, inimicus hendrerit comprehensam ne eum. Accusata iracundia per eu, aliquip sadipscing in qui, semper maluisset consetetur ei has. An sit erat prompta, elit corrumpit honestatis ei sed, ut ius dicant vituperatoribus. Quod invenire an his, ne has essent eirmod recteque. Convenire assueverit scribentur vim et.
+                  </p>  
+                      
+                  <p class="lead">
+                      Eu nam vivendo repudiandae, eu quod tale paulo eam. Eam id omnium appetere perfecto, alii dolorem conceptam ea quo, velit deserunt adversarium an sea. Per in soleat interesset, sit ad amet deleniti, at laudem platonem sit. At graeci appellantur sed, ne quem quando mel. Sed cu velit causae perpetua, error voluptaria per ad. Ferri veniam vivendo no per.
+                  </p>
+                      
+                  <p class="lead">
+                      Erat veniam suavitate sea id, autem recteque vis ei. Ex lorem dicunt virtute sed. Ei inani option corpora nec, cu nam alia probatus, ei nec adhuc aperiri similique. Has no debitis iracundia philosophia, eu ius enim detracto democritum, eam ne blandit tacimates disputationi. Per probo saperet suavitate te.
+                  </p>
+                      
+                  <p class="lead">
+                      Mea ad tantas fabulas expetendis, at vel molestiae rationibus consequuntur, eu suas adhuc consulatu eos. Est decore labore assueverit te. Nisl velit at vis, modus mentitum et mel, inani laoreet imperdiet vel ne. Qui equidem suavitate ei, delectus lucilius ea usu. Eu sumo luptatum pro, has no alii oblique. Virtute mandamus intellegam his in, vero idque facilisi mei ei.
+                  </p>
+
+                  <h1 class="fw-light text-center text-lg-start mt-4 mb-0">Tour Gallery</h1>
+              
+                  <hr class="mt-2 mb-5">
+              
+                  <div class="row text-center text-lg-start">
+                
+                    <div class="col-lg-3 col-md-4 col-6">
+                      <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
+                      </a>
                     </div>
-                </div>
-
-                <div class="container">
-
-                    
-                      </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                      <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="">
+                      </a>
                     </div>
-                  
+                    <div class="col-lg-3 col-md-4 col-6">
+                      <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt="">
+                      </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                      <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
+                      </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                      <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
+                      </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                      <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/AvhMzHwiE_0/400x300" alt="">
+                      </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                      <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/2gYsZUmockw/400x300" alt="">
+                      </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                      <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EMSDtjVHdQ8/400x300" alt="">
+                      </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                      <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/8mUEy0ABdNE/400x300" alt="">
+                      </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                      <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/G9Rfc1qccH4/400x300" alt="">
+                      </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                      <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aJeH0KcFkuc/400x300" alt="">
+                      </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6">
+                      <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/p2TQ-3Bh3Oo/400x300" alt="">
+                      </a>
+                    </div>
+
                   </div>
+                </div>
             </div>
         </div>
 
+
     </main>
 
-    <footer></footer>
+    <footer class="bg-dark py-4 mt-auto">
+      <div class="container px-5">
+          <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+              <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2022</div></div>
+              <div class="col-auto">
+                  <a class="link-light small" href="#!">Privacy</a>
+                  <span class="text-white mx-1">&middot;</span>
+                  <a class="link-light small" href="#!">Terms</a>
+              </div>
+          </div>
+      </div>
+    </footer>
 
-    <script src="script/script.js"></script>
+    
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <!-- Google JQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Google Jquery Mobile CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Custom Javascript -->
+    <script src="script/script.js"></script>
     <!-- Instant Page -->
     <script src="script/instantpage.js" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
 </body>
