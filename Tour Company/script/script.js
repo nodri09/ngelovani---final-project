@@ -1,16 +1,3 @@
-
-// Jquery - top bar drop shadow animation
-$(document).ready(function() {
-    $(window).scroll(function(){
-        var scroll = $(window).scrollTop();
-        if (scroll > 0) {
-            $("#top-menu").addClass('active');
-        } else {
-            $("#top-menu").removeClass("active");
-        }
-    })
-});
-
 /* Tour booking form validator */ 
 const tourStartDate = document.getElementById('tourStartDate');
 const tourEndDate = document.getElementById('tourEndDate');

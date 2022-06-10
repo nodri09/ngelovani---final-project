@@ -6,19 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Pre-load all the styles and scripts -->
     <link rel="preload" href="css/style.css" as="style">
-    <link rel="preload" href="script/instantpage.js" as="script">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" as="style">
+    <link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" as="script">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" as="script">
+    <link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" as="script">
+    <link rel="preload" href="script/customJquery.js" as="script">
     <link rel="preload" href="script/script.js" as="script" />
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <!-- Jquery CSS -->
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+
     <!-- Title of the web-page -->
     <title>Tour Copmany</title>
 </head>
@@ -196,7 +204,7 @@
                       <div class="text-center">
                           <div class="fs-4 mb-4 fst-italic">"Lorem ipsum dolor sit amet, laudem quodsi sea in, essent corpora commune has in. In his idque virtute imperdiet, tation interesset has ut. Decore homero atomorum cum ne. Mei an aeterno aliquip."</div>
                           <div class="d-flex align-items-center justify-content-center">
-                              <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
+                              <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="Tourist Avatar" />
                               <div class="fw-bold">
                                   Tom Ato
                                   <span class="fw-bold text-primary mx-1">/</span>
@@ -210,56 +218,75 @@
         </div>
         <!-- Meet our Guides and Drivers section -->
         <section class="mt-5">
-            <div class="bg-primary text-center py-5 mb-4 container">
-                <h1 class="fw-light text-white">Meet our Guides and Drivers</h1>
-            </div>
+          <div class="bg-primary text-center py-5 mb-4 container">
+              <h1 class="fw-light text-white">Meet our Guides and Drivers</h1>
+          </div>
 
-            <div class="container">
-                <div class="row">
-                  <!-- Guide 1 -->
-                  <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-0 shadow">
-                      <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
-                      <div class="card-body text-center">
-                        <h5 class="card-title mb-0">Jon Doe</h5>
-                        <div class="card-text text-black-50">Guide</div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Driver 2 -->
-                  <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-0 shadow">
-                      <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">
-                      <div class="card-body text-center">
-                        <h5 class="card-title mb-0">Hanan Philip</h5>
-                        <div class="card-text text-black-50">Driver</div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Guide 3 -->
-                  <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-0 shadow">
-                      <img src="https://source.unsplash.com/sNut2MqSmds/500x350" class="card-img-top" alt="...">
-                      <div class="card-body text-center">
-                        <h5 class="card-title mb-0">GuiParker Dodsonde</h5>
-                        <div class="card-text text-black-50">Guide</div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Driver 4 -->
-                  <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-0 shadow">
-                      <img src="https://source.unsplash.com/7u5mwbu7qLg/500x350" class="card-img-top" alt="...">
-                      <div class="card-body text-center">
-                        <h5 class="card-title mb-0">DriHelen Dorseyver</h5>
-                        <div class="card-text text-black-50">Driver</div>
-                      </div>
-                    </div>
+          <div class="container">
+            <div class="row owl-carousel">
+              <!-- Guide 1 -->
+              <div class="col-xl-3 col-md-6 mb-4 owl-carousel-item">
+                <div class="card border-0 shadow">
+                  <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" width="10rem" height="180rem" class="card-img-top" alt="Guide avatar: Jon Doe">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Jon Doe</h5>
+                    <div class="card-text text-black-50">Guide</div>
                   </div>
                 </div>
-                <!-- /.row -->
-              
+              </div>
+              <!-- Driver 2 -->
+              <div class="col-xl-3 col-md-6 mb-4 owl-carousel-item">
+                <div class="card border-0 shadow">
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" width="10rem" height="180rem" class="card-img-top" alt="Driver avatar: Lilah Oconnor">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Lilah Oconnor</h5>
+                    <div class="card-text text-black-50">Driver</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Guide 2 -->
+              <div class="col-xl-3 col-md-6 mb-4 owl-carousel-item">
+                <div class="card border-0 shadow">
+                  <img src="https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" width="10rem" height="180rem" class="card-img-top" alt="Guide avatar: Lacie-Mae Dillard">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Lacie-Mae Dillard</h5>
+                    <div class="card-text text-black-50">Guide</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Driver 3 -->
+              <div class="col-xl-3 col-md-6 mb-4 owl-carousel-item">
+                <div class="card border-0 shadow">
+                  <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=761&q=80" width="10rem" height="180rem" class="card-img-top" alt="Driver avatar: Murat Witt">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Murat Witt</h5>
+                    <div class="card-text text-black-50">Driver</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Driver 4 -->
+              <div class="col-xl-3 col-md-6 mb-4 owl-carousel-item">
+                <div class="card border-0 shadow">
+                  <img src="https://images.unsplash.com/photo-1624298357597-fd92dfbec01d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" width="10rem" height="180rem" class="card-img-top" alt="Driver avatar: Lucien Peck">
+                    <div class="card-body text-center">
+                      <h5 class="card-title mb-0">Lucien Peck</h5>
+                      <div class="card-text text-black-50">Driver</div>
+                    </div>
+                </div>
+              </div>
+              <!-- Guide 3 -->
+              <div class="col-xl-3 col-md-6 mb-4 owl-carousel-item">
+                <div class="card border-0 shadow">
+                  <img src="https://images.unsplash.com/photo-1624561172888-ac93c696e10c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80" width="10rem" height="180rem" class="card-img-top" alt="Guide avatar: Lacie-Mae Dillard">
+                    <div class="card-body text-center">
+                      <h5 class="card-title mb-0">Lacie-Mae Dillard</h5>
+                      <div class="card-text text-black-50">Guide</div>
+                    </div>
+                </div>
+              </div>
             </div>
+          </div>
+
         </section>
 
         <!-- Blog preview section-->
@@ -309,7 +336,7 @@
               <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
                   <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
                       <div class="mb-4 mb-xl-0">
-                          <div class="fs-3 fw-bold text-white">New products, delivered to you.</div>
+                          <div class="fs-3 fw-bold text-white">Need some tips for the travel?</div>
                           <div class="text-white-50">Sign up for our newsletter for the latest updates.</div>
                       </div>
                       <div class="ms-xl-4">
@@ -317,7 +344,6 @@
                               <input class="form-control" type="text" placeholder="Email address..." aria-label="Email address..." aria-describedby="button-newsletter" />
                               <button class="btn btn-outline-light" id="button-newsletter" type="button">Sign up</button>
                           </div>
-                          <div class="small text-white-50">We care about privacy, and will never share your data.</div>
                       </div>
                   </div>
               </aside>
@@ -343,11 +369,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <!-- Google JQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- Google Jquery Mobile CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Owl Carousel Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Custom Javascript -->
+    <script src="script/customJquery.js"></script>
     <script src="script/script.js"></script>
     <!-- Instant Page -->
-    <script src="script/instantpage.js" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
+
