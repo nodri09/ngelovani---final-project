@@ -10,6 +10,18 @@ html {
     scroll-behavior: smooth;
 }
 
+h1, h2 {
+    font-family: Roboto-Light;
+}
+
+h3 {
+    font-family: Roboto-LightItalic;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 /* Animation */
 @keyframes fade-in {
     0% {
